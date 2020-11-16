@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.navbar-brand img{
+  width: 100%;
+  height: 4.5rem;
+}
+/* .carousel{
+    box-shadow: inset 0 0 0 100vw rgba(126, 39, 39, 0.5);
+} */
+
+.carousel-item{
+    position: relative;
+    background-size: cover;
+    height: 400px;
+}
+.carousel-item:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(7, 5, 5, 0.5);
+}
+
+.carousel-caption{
+    width: 50%;
+    position: absolute;
+    top: 5rem;
+    left: 4rem;
+    text-align: left;
+    
+}
+
+.carousel-caption h3{
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.navbar-nav .nav-link{
+    color: #1D2257;
+    font-weight: 500;
+}
+
+.signup-btn, .signin-btn:hover{
+    background-color: #1D2257;
+}
+
+.signup-btn>a{
+    color: #ffffff !important;
+}
+
+.signin-btn>a:hover{
+    color: #ffffff;
+}
+
+
+.signup-btn, .signin-btn{
+    padding: 0px 20px;
+}
+
+
+
+.nav-link{
+    color: #6C63FF;
+}
+
+.slider-img {
+    width: 100% !important;
+    height: 29rem !important;
+    object-fit: cover;
+}
+.tab-pane{
+   
+    justify-content: space-evenly;
+}
+
+.workers-btn, .sellers-btn{
+    padding: 0.6rem 1.5rem;
+    border-radius: 10px;
+    border: 0px;
+    color: #ffffff;
+}
+
+.workers-btn{
+    background-color: #1D2257;
+}
+
+.sellers-btn{
+    background-color: transparent;
+    border: 1px solid rgb(180, 177, 177);
+}
+
+
+
+@media screen and (min-width: 1024px){
+    .signin-btn{
+        margin-left: 0.6rem;
+        margin-right: 1rem;
+    }
+    .about-us{
+        margin-left: 0.6rem;
+    }
+}
