@@ -4,15 +4,16 @@
     box-sizing: border-box;
 }
 
-
+body{
+    font-family: 'Montserrat', sans-serif
+}
 
 .navbar-brand img{
   width: 100%;
-  height: 4.5rem;
+  margin-left: 1rem;
+  /* height: 4.5rem; */
 }
-/* .carousel{
-    box-shadow: inset 0 0 0 100vw rgba(126, 39, 39, 0.5);
-} */
+
 
 .carousel-item{
     position: relative;
@@ -32,17 +33,18 @@
 }
 
 .carousel-caption{
-    width: 50%;
+    width: 100%;
     position: absolute;
-    top: 5rem;
-    left: 4rem;
+    top: 4rem;
+    left: 0.4rem;
     text-align: left;
     
 }
 
 .carousel-caption h3{
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-family: 'Playfair Display', serif;
+    word-wrap: break-word;
 }
 
 .navbar-nav .nav-link{
@@ -94,19 +96,112 @@
     background-color: #1D2257;
 }
 
+.workers-btn:hover{
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid rgb(180, 177, 177);
+
+}
+
 .sellers-btn{
     background-color: transparent;
     border: 1px solid rgb(180, 177, 177);
 }
 
+.sellers-btn:hover{
+    background-color: #1D2257;
+    border: none;
+}
 
+.nav-pills{
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#pills-home-tab,
+#pills-profile-tab,
+#pills-contact-tab{
+    color: #1D2257;
+    font-weight: 500;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #1D2257;
+    color: #ffffff !important;
+}
+
+.card{
+    padding: 0;
+    height: 18rem;
+}
+
+.card-body p{
+    color: #1D2257;
+}
+.card-body span{
+    color: #D6F11F;
+}
+
+@media screen and (min-width: 768px){
+    .carousel-caption{
+        width: 70%;
+        position: absolute;
+        top: 3rem;
+        left: 2rem;
+        text-align: left;
+        
+    }
+
+    .nav-pills{
+        width: 70%;
+       
+    }
+}
 
 @media screen and (min-width: 1024px){
+    .carousel-caption h3{
+        font-size: 3rem;
+    }
+
+    .carousel-caption{
+        width: 50%;
+        position: absolute;
+        top: 1rem;
+        left: 2rem;
+        text-align: left;
+        
+    }
+
+    .nav-pills{
+        width: 50%;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 1280px){
     .signin-btn{
         margin-left: 0.6rem;
         margin-right: 1rem;
     }
     .about-us{
         margin-left: 0.6rem;
+    }
+
+    .carousel-caption{
+        width: 50%;
+        position: absolute;
+        top: 5rem;
+        left: 2rem;
+        text-align: left;
+        
+    }
+
+    .nav-pills{
+        width: 40%;
+        margin: 0 auto;
     }
 }
