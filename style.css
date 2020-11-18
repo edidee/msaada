@@ -81,7 +81,7 @@ body{
     object-fit: cover;
 }
 .tab-pane{
-   
+   display: flex;
     justify-content: space-evenly;
 }
 
