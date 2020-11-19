@@ -132,7 +132,7 @@ body{
 }
 
 .card{
-    padding: 0;
+    /* padding: 0; */
     height: 18rem;
 }
 
@@ -141,6 +141,10 @@ body{
 }
 .card-body span{
     color: #D6F11F;
+}
+
+.workers{
+    display: flex !important;
 }
 
 @media screen and (min-width: 768px){
