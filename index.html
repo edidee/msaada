@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -49,8 +48,8 @@
             <div class="carousel-caption d-md-block">
               <h3>Nigeria's No. 1 platform for connecting clients to professional artisans</h3>
               <p>Nulla vitae elit libero, a pharetra augue mollis</p>
-              <button class="workers-btn">Hire Workers</button>
-              <button class="sellers-btn">Become Seller</button>
+              <button class="workers-btn">Hire a Worker</button>
+              <button class="sellers-btn">Become a Worker</button>
             </div>
           </div>
           <div class="carousel-item" style="background-image: url(images/slider2.jpg);">
@@ -85,71 +84,126 @@
 
   <main >
     <section class="container-fluid">
-      <ul class="nav nav-pills mb-3 mt-5" id="pills-tab" role="tablist">
+      <ul class="nav nav-pills nav-pills-index mb-3 mt-5" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
-          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">All</a>
+          <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">All</a>
         </li>
         <li class="nav-item" role="presentation">
-          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Electrician</a>
+          <a class="nav-link" id="pills-electrician-tab" data-toggle="pill" href="#pills-electrician" role="tab" aria-controls="pills-electrician" aria-selected="false">Electrician</a>
         </li>
         <li class="nav-item" role="presentation">
-          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Generator Guy</a>
+          <a class="nav-link" id="pills-plumber-tab" data-toggle="pill" href="#pills-plumber" role="tab" aria-controls="pills-plumber" aria-selected="false">Plumber</a>
         </li>
         <li class="nav-item" role="presentation">
-          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Plumber</a>
+          <a class="nav-link" id="pills-AC-tab" data-toggle="pill" href="#pills-AC" role="tab" aria-controls="pills-AC" aria-selected="false">AC/Gen Guy</a>
         </li>
         <li class="nav-item" role="presentation">
-          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">AC Guy</a>
+          <a class="nav-link" id="pills-Carpenter-tab" data-toggle="pill" href="#pills-Carpenter" role="tab" aria-controls="pills-Carpenter" aria-selected="false">Carpenter</a>
         </li>
       </ul>
 
       <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active workers row" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <div class="tab-pane fade show active " id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
 
-          <div class="card col-lg-3" style="width: 16rem;">
-            <img src="images/seller1.png" class="card-img-top" alt="...">
-            <div class="card-body d-flex justify-content-between">
-              <p class="card-text">Becky Udom<br> Carpenter</p>
-              <span>
-                <img src="images/work_outline-24px.png" alt="" class="img-fluid">
-                7
-              </span>
+          <div class="row">
+            <div class="card col-lg-3" style="width: 16rem;">
+              <img src="images/plumber.jpeg" class="card-img-top" alt="...">
+              <div class="card-body d-flex justify-content-between">
+                <p class="card-text">Bola Tinubu<br> Plumber</p>
+                <span>
+                  <img src="images/work_outline-24px.png" alt="" class="img-fluid">
+                  1
+                </span>
+              </div>
             </div>
-          </div>
-          <div class="card col-lg-3" style="width: 16rem;">
-            <img src="images/seller2.png" class="card-img-top" alt="...">
-            <div class="card-body d-flex justify-content-between">
-              <p class="card-text">Emem Ekpo<br> AC Guy</p>
-              <span>
-                <img src="images/work_outline-24px.png" alt="" class="img-fluid">
-                7
-              </span>
+            <div class="card col-lg-3" style="width: 16rem;">
+              <img src="images/electrician.jpeg" class="card-img-top" alt="...">
+              <div class="card-body d-flex justify-content-between">
+                <p class="card-text">Godswill Akpabio<br> Electrician</p>
+                <span>
+                  <img src="images/work_outline-24px.png" alt="" class="img-fluid">
+                  14
+                </span>
+              </div>
             </div>
-          </div>
-          <div class="card col-lg-3" style="width: 16rem;">
-            <img src="images/seller4.png" class="card-img-top" alt="...">
-            <div class="card-body d-flex justify-content-between">
-              <p class="card-text">Akeem Yakubu<br> Electrician</p>
-              <span>
-                <img src="images/work_outline-24px.png" alt="" class="img-fluid">
-                7
-              </span>
+            <div class="card col-lg-3" style="width: 16rem;">
+              <img src="images/ACguy.jpeg" class="card-img-top" alt="...">
+              <div class="card-body d-flex justify-content-between">
+                <p class="card-text">Yakubu Gowon<br> AC Guy</p>
+                <span>
+                  <img src="images/work_outline-24px.png" alt="" class="img-fluid">
+                  5
+                </span>
+              </div>
             </div>
-          </div>
-          <div class="card col-lg-3" style="width: 16rem;">
-            <img src="images/seller3.png" class="card-img-top" alt="...">
-            <div class="card-body d-flex justify-content-between">
-              <p class="card-text">Mfon Umana<br> Generator Guy</p>
-              <span>
-                <img src="images/work_outline-24px.png" alt="" class="img-fluid">
-                7
-              </span>
+            <div class="card col-lg-3" style="width: 16rem;">
+              <img src="images/carpenter.jpeg" class="card-img-top" alt="...">
+              <div class="card-body d-flex justify-content-between">
+                <p class="card-text">Muhammadu Buhari<br> Carpenter</p>
+                <span>
+                  <img src="images/work_outline-24px.png" alt="" class="img-fluid">
+                  0
+                </span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">..Justo rebum ea eos magna sit. Diam lorem sed sed ipsum dolor dolor. Nonumy sit et nonumy sit at, dolore et voluptua gubergren ea, elitr dolor kasd est eos lorem kasd. Ea no lorem gubergren erat est at et justo sea, est sea dolor vero sanctus et vero sea sadipscing..</div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...Invidunt consetetur duo sanctus duo et clita takimata et no sadipscing, stet sit labore lorem lorem dolore, labore amet sed sadipscing ea takimata et. Eirmod ipsum sit ea sadipscing sed eirmod et sit no. Sed stet no rebum accusam dolor lorem sit amet justo, elitr ipsum tempor duo et amet rebum nonumy elitr. Ipsum et takimata et clita ipsum sed sed, diam ut eos eirmod sea amet, dolores takimata voluptua consetetur labore. Elitr nonumy rebum sea vero vero clita ea..</div>
-      </div>
+        <div class="tab-pane fade" id="pills-electrician" role="tabpanel" aria-labelledby="pills-electrician-tab">
+          <div class="row">
+            <div class="card col-lg-3" style="width: 16rem;">
+              <img src="images/electrician.jpeg" class="card-img-top" alt="...">
+              <div class="card-body d-flex justify-content-between">
+                <p class="card-text">Godswill Akpabio<br> Electrician</p>
+                <span>
+                  <img src="images/work_outline-24px.png" alt="" class="img-fluid">
+                  14
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-plumber" role="tabpanel" aria-labelledby="pills-plumber-tab">
+          <div class="row">
+            <div class="card col-lg-3" style="width: 16rem;">
+              <img src="images/plumber.jpeg" class="card-img-top" alt="...">
+              <div class="card-body d-flex justify-content-between">
+                <p class="card-text">Bola Tinubu<br> Plumber</p>
+                <span>
+                  <img src="images/work_outline-24px.png" alt="" class="img-fluid">
+                1
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-AC" role="tabpanel" aria-labelledby="pills-AC-tab">
+          <div class="row">
+            <div class="card col-lg-3" style="width: 16rem;">
+              <img src="images/ACguy.jpeg" class="card-img-top" alt="...">
+              <div class="card-body d-flex justify-content-between">
+                <p class="card-text">Yakubu Gowon<br> AC Guy</p>
+                <span>
+                  <img src="images/work_outline-24px.png" alt="" class="img-fluid">
+                  5
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-Carpenter" role="tabpanel" aria-labelledby="pills-Carpenter-tab">
+          <div class="row">
+            <div class="card col-lg-3" style="width: 16rem;">
+              <img src="images/carpenter.jpeg" class="card-img-top" alt="...">
+              <div class="card-body d-flex justify-content-between">
+                <p class="card-text">Muhammadu Buhari<br> Carpenter</p>
+                <span>
+                  <img src="images/work_outline-24px.png" alt="" class="img-fluid">
+                  0
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
   </main>
 

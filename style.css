@@ -4,14 +4,44 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Montserrat light', sans-serif;
+    src: url(./Montserrat/Montserrat-Light.ttf)
+}
+
+@font-face {
+    font-family: 'Montserrat regular', sans-serif;
+    src: url(./Montserrat/Montserrat-Regular.ttf) 
+}
+
+@font-face {
+    font-family: 'Montserrat medium', sans-serif;
+    src: url(./Montserrat/Montserrat-Medium.ttf);
+}
 body{
-    font-family: 'Montserrat', sans-serif
+    font-family: 'Montserrat regular', sans-serif
+}
+
+button{
+    font-family: 'Montserrat-Medium';
+}
+
+a{
+    font-family: 'Montserrat-Medium';
+}
+
+p{
+    font-family: 'Montserrat-Light';
 }
 
 .navbar-brand img{
   width: 100%;
   margin-left: 1rem;
   /* height: 4.5rem; */
+}
+
+p {
+    font-weight: light;
 }
 
 
@@ -113,20 +143,22 @@ body{
     border: none;
 }
 
-.nav-pills{
+.nav-pills-index{
     width: 100%;
     margin: 0 auto;
     flex-wrap: wrap;
 }
 
-#pills-home-tab,
-#pills-profile-tab,
-#pills-contact-tab{
+#pills-all-tab,
+#pills-electrician-tab,
+#pills-plumber-tab,
+#pills-AC-tab,
+#pills-Carpenter-tab{
     color: #1D2257;
     font-weight: 500;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+.nav-pills-index .nav-link.active, .nav-pills-index .show>.nav-link{
     background-color: #1D2257;
     color: #ffffff !important;
 }
@@ -157,7 +189,7 @@ body{
         
     }
 
-    .nav-pills{
+    .nav-pills-index{
         width: 70%;
        
     }
@@ -177,7 +209,7 @@ body{
         
     }
 
-    .nav-pills{
+    .nav-pills-index{
         width: 50%;
     }
 }
@@ -204,8 +236,47 @@ body{
         
     }
 
-    .nav-pills{
+    .nav-pills-index{
         width: 40%;
         margin: 0 auto;
     }
+}
+
+
+
+
+/* workers page */
+
+.img-div{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.img-div img{
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
+
+}
+
+.shadow-sm{
+    box-shadow: 2px -4px rgba(0,0,0,.075) !important;
+}
+
+.profile h4{
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0;
+}
+
+.profile button{
+    padding: 0.6rem 3.9rem !important;
+    border-radius: 10px;
+    border: 0px;
+    color: #ffffff;
+    background-color: #1D2257;
+}
+
+.profile p{
+    color: #1D2257;
 }
