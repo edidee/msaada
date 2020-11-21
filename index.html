@@ -13,7 +13,7 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg ">
-        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" srcset="" class="img-fluid"></a>
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" srcset="" class="img-fluid"></a>
         <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -89,14 +89,15 @@
           <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">All</a>
         </li>
         <li class="nav-item" role="presentation">
+          <a class="nav-link" id="pills-mechanic-tab" data-toggle="pill" href="#pills-mechanic" role="tab" aria-controls="pills-mechanic" aria-selected="false">Mechanic</a>
+        </li>
+        <li class="nav-item" role="presentation">
           <a class="nav-link" id="pills-electrician-tab" data-toggle="pill" href="#pills-electrician" role="tab" aria-controls="pills-electrician" aria-selected="false">Electrician</a>
         </li>
         <li class="nav-item" role="presentation">
           <a class="nav-link" id="pills-plumber-tab" data-toggle="pill" href="#pills-plumber" role="tab" aria-controls="pills-plumber" aria-selected="false">Plumber</a>
         </li>
-        <li class="nav-item" role="presentation">
-          <a class="nav-link" id="pills-AC-tab" data-toggle="pill" href="#pills-AC" role="tab" aria-controls="pills-AC" aria-selected="false">AC/Gen Guy</a>
-        </li>
+        
         <li class="nav-item" role="presentation">
           <a class="nav-link" id="pills-Carpenter-tab" data-toggle="pill" href="#pills-Carpenter" role="tab" aria-controls="pills-Carpenter" aria-selected="false">Carpenter</a>
         </li>
@@ -106,6 +107,18 @@
         <div class="tab-pane fade show active " id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
 
           <div class="row">
+            <div class="card col-lg-3" style="width: 16rem;">
+              <a href="workers.html" class="text-decoration-none">
+                <img src="images/mechanic.jpeg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-between">
+                  <p class="card-text">Joseph Ikotidem<br>Mechanic</p>
+                  <span>
+                    <img src="images/work_outline-24px.png" alt="" class="img-fluid">
+                    5
+                  </span>
+                </div>
+              </a>
+            </div>
             <div class="card col-lg-3" style="width: 16rem;">
               <img src="images/plumber.jpeg" class="card-img-top" alt="...">
               <div class="card-body d-flex justify-content-between">
@@ -126,16 +139,7 @@
                 </span>
               </div>
             </div>
-            <div class="card col-lg-3" style="width: 16rem;">
-              <img src="images/ACguy.jpeg" class="card-img-top" alt="...">
-              <div class="card-body d-flex justify-content-between">
-                <p class="card-text">Yakubu Gowon<br> AC Guy</p>
-                <span>
-                  <img src="images/work_outline-24px.png" alt="" class="img-fluid">
-                  5
-                </span>
-              </div>
-            </div>
+            
             <div class="card col-lg-3" style="width: 16rem;">
               <img src="images/carpenter.jpeg" class="card-img-top" alt="...">
               <div class="card-body d-flex justify-content-between">
@@ -176,17 +180,19 @@
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="pills-AC" role="tabpanel" aria-labelledby="pills-AC-tab">
+        <div class="tab-pane fade" id="pills-mechanic" role="tabpanel" aria-labelledby="pills-mechanic-tab">
           <div class="row">
             <div class="card col-lg-3" style="width: 16rem;">
-              <img src="images/ACguy.jpeg" class="card-img-top" alt="...">
-              <div class="card-body d-flex justify-content-between">
-                <p class="card-text">Yakubu Gowon<br> AC Guy</p>
-                <span>
-                  <img src="images/work_outline-24px.png" alt="" class="img-fluid">
-                  5
-                </span>
-              </div>
+              <a href="workers.html" class="text-decoration-none">
+                <img src="images/mechanic.jpeg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-between">
+                  <p class="card-text">Joseph Ikotidem<br>Mechanic</p>
+                  <span>
+                    <img src="images/work_outline-24px.png" alt="" class="img-fluid">
+                    5
+                  </span>
+                </div>
+              </a>
             </div>
           </div>
         </div>
