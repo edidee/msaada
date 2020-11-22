@@ -10,6 +10,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <section id="hire-me-form">
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </section>
+
     <header>
         <nav class="navbar navbar-expand-lg ">
             <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" srcset="" class="img-fluid"></a>
@@ -46,7 +65,7 @@
           </div>
           <h4>Joseph Ikotidem</h4>
           <p>Mechanic</p>
-          <button>Hire me</button>
+          <button onclick="hireForm()">Hire me</button>
         </div>
       </section>
 
@@ -65,7 +84,7 @@
         <div class="tab-content mt-5" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
             <div class="row">
-              <div class="col-lg-6 col-md-6 workers-about">
+              <div class="col-lg-6 col-md-6 workers-about  mb-4">
                     <h5>Biography</h5>
                     <p>Et magna ut lorem dolores erat, sanctus no et takimata aliquyam sanctus, invidunt sanctus sed sadipscing no diam diam gubergren..</p>
                     <h5>Skills</h5>
@@ -73,7 +92,7 @@
                     <span>Furniture making</span>&nbsp;&nbsp;
                     <span>Sculptures</span>
               </div>
-              <div class="col-lg-4 col-md-6 workers-contact ml-lg-5">
+              <div class="col-lg-4 col-md-6 workers-contact ml-lg-5  mb-4">
                 <div class="d-flex mb-3 ml-lg-5 mt-lg-3">
                   <img src="images/company-icon.png" alt="">&nbsp;&nbsp;
                   ABC Furniture Maker
@@ -89,6 +108,14 @@
 
               </div>
             </div>
+            <!-- <div class="row">
+              <div class="col-lg-6 controls width="320" height="240"">
+                <video src="mechanic.mp4" type="video/mp4"></video>
+                <video src="mechanic.ogg" type="video/ogg"></video>
+                Your browser does not support the video tag.
+              </div>
+
+            </div> -->
 
           </div>
           <div class="tab-pane fade" id="pills-jobs" role="tabpanel" aria-labelledby="pills-jobs-tab">...</div>

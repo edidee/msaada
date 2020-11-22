@@ -313,3 +313,7 @@ p {
     font-weight: 500;
     font-family: 'Montserrat-Regular';
 }
+
+#hire-me-form{
+    display: none;
+}
