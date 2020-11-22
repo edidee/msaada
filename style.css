@@ -315,5 +315,21 @@ p {
 }
 
 #hire-me-form{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 20px;
     display: none;
+}
+
+#h-form{
+    width: calc(100% - 800px);
+    margin: auto;
+    margin-top: 50px;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #f4f6f3;
 }
