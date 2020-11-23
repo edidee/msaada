@@ -10,22 +10,90 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section id="hire-me-form">
-    <div id="h-form">
+   <!-- Sign in form -->
+   <section id="signin-form">
+    <div id="s-form">
+      <h3 class="form-h3 text-center">Login</h3>
       <form>
         <div class="form-group">
-          <label for="name">Name</label>
-          <input type="email" class="form-control" id="name" aria-describedby="emailHelp">
+          <label for="exampleInputEmail1">Name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
           <input type="password" class="form-control" id="exampleInputPassword1">
+          <small class="smallPW text-right"><a href="#">Forgotten Password</a></small>
         </div>
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        
+        <button type="submit" class="btn hire-form-btn">Login</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Sign up form -->
+  <section id="signup-form">
+    <div id="s-form">
+      <h3 class="form-h3 text-center">Sign up</h3>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" aria-describedby="emailHelp">   
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" class="form-control" id="location" aria-describedby="emailHelp">   
+        </div>
+        <div class="form-group">
+          <label for="password">Create Password</label>
+          <input type="password" class="form-control" id="password">
+        </div>
+        <div class="form-group">
+          <label for="password">Confirm Password</label>
+          <input type="password" class="form-control" id="password">
+        </div>  
+        <button type="submit" class="btn hire-form-btn">Sign up</button>
+      </form>
+    </div>
+  </section>
+
+<!-- Hire me form -->
+  <section id="hire-me-form">
+    <div id="h-form">
+      <h3 class="form-h3 text-center">Hire a Worker</h3>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" aria-describedby="emailHelp" required>
+        </div>
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" class="form-control" id="location" required>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
+          <label class="form-check-label" for="inlineRadio1">Emergency</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
+          <label class="form-check-label" for="inlineRadio2">Long Term</label>
+        </div><br><br>
+        <div class="form-group">
+          <label for="jobDescription">Job Description</label>
+          <textarea class="form-control" id="jobDescription" rows="3"></textarea>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault01">Price Range</label>
+            <input type="text" class="form-control" id="validationDefault01" value="" required>
+          </div>
+          <div class="col-md-6 mb-3">            
+            <label for="validationDefault02">to:</label>
+            <input type="text" class="form-control" id="validationDefault02" value="" required>
+          </div>
+        </div>
+        <br>
+        <button type="submit" class="btn hire-form-btn">Proceed to Hire</button>
       </form>
     </div>
   </section>
@@ -42,13 +110,13 @@
                   <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 </form>
                 <li class="nav-item active">
-                  <a class="nav-link about-us" href="#">About us <span class="sr-only">(current)</span></a>
+                  <a class="nav-link about-us" href="./about.html">About us <span class="sr-only">(current)</span></a>
                 </li>
                 <button class="nav-item btn signin-btn">
-                  <a class="nav-link" href="#">Sign in</a>
+                  <a class="nav-link" href="#" onclick="signinForm()">Sign in</a>
                 </button>
                 <button class="nav-item btn signup-btn">
-                  <a class="nav-link" href="#">Sign up</a>
+                  <a class="nav-link" href="#" onclick="signupForm()">Sign up</a>
                 </button>
               </ul>
               
