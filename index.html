@@ -99,6 +99,55 @@
       </form>
     </div>
   </section>
+
+  <!-- Become a worker -->
+  <section id="become-worker">
+    <div id="h-form">
+      <h3 class="form-h3 text-center">Become a Worker</h3>
+      <form>
+        <div class="form-group">
+          <label for="name">First Name</label>
+          <input type="text" class="form-control" id="name" aria-describedby="emailHelp" required>
+        </div>
+        <div class="form-group">
+          <label for="name">Last Name</label>
+          <input type="text" class="form-control" id="name" aria-describedby="emailHelp" required>
+        </div>
+        <div class="form-group">
+          <label for="name">Profession</label>
+          <input type="text" class="form-control" id="name" aria-describedby="emailHelp" required>
+        </div>
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" class="form-control" id="location" required>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
+          <label class="form-check-label" for="inlineRadio1">Emergency</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
+          <label class="form-check-label" for="inlineRadio2">Long Term</label>
+        </div><br><br>
+        <div class="form-group">
+          <label for="jobDescription">Job Description</label>
+          <textarea class="form-control" id="jobDescription" rows="3"></textarea>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault01">Price Range</label>
+            <input type="text" class="form-control" id="validationDefault01" value="" required>
+          </div>
+          <div class="col-md-6 mb-3">            
+            <label for="validationDefault02">to:</label>
+            <input type="text" class="form-control" id="validationDefault02" value="" required>
+          </div>
+        </div>
+        <br>
+        <button type="submit" class="btn hire-form-btn">Proceed to Hire</button>
+      </form>
+    </div>
+  </section>
   <header class="container-fluid">
     <nav class="navbar navbar-expand-lg ">
         <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" srcset="" class="img-fluid"></a>
@@ -137,7 +186,7 @@
               <h3>Nigeria's No. 1 platform for connecting clients to professional artisans</h3>
               <p>msaada makes connection</p>
               <button class="workers-btn" onclick='hireForm()'>Hire a Worker</button>
-              <button class="sellers-btn">Become a Worker</button>
+              <button class="sellers-btn" onclick="becomeWorker()">Become a Worker</button>
             </div>
           </div>
           <div class="carousel-item" style="background-image: url(images/slider2.jpeg); background-position: center center; background-repeat: no-repeat;">
@@ -145,7 +194,7 @@
               <h3>Need help closest to you on a budget? </h3>
               <p>msaada is here for you </p>
               <button class="workers-btn" onclick='hireForm()'>Hire a Workers</button>
-              <button class="sellers-btn">Become a Worker</button>
+              <button class="sellers-btn" onclick="becomeWorker()">Become a Worker</button>
             </div>
           </div>
           <div class="carousel-item" style="background-image: url(images/slider3.jpeg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
@@ -154,7 +203,7 @@
               <h3>Get workers for your every need at everytime</h3>
               <p>We are your plug</p>
               <button class="workers-btn" onclick="hireForm()">Hire a Workers</button>
-              <button class="sellers-btn">Become a Worker</button>
+              <button class="sellers-btn" onclick="becomeWorker()">Become a Worker</button>
             </div>
           </div>
          

@@ -12,6 +12,18 @@ document.addEventListener('click', function(e){
     }
 })
 
+function becomeWorker(){
+    let becomeaWorker = document.getElementById('become-worker');
+    becomeaWorker.style.display = 'block'
+}
+document.addEventListener('click', function(e){
+    let pressOn = e.target.id;
+    if (pressOn == 'become-worker'){
+        let end = document.getElementById('become-worker')
+        end.style.display = 'none'
+    }
+})
+
 
 function signinForm(){
     let signForm = document.getElementById('signin-form');
