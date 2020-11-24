@@ -237,7 +237,7 @@ p {
     .carousel-caption{
         width: 50%;
         position: absolute;
-        top: 5rem;
+        top: 8rem;
         left: 2rem;
         text-align: left;
         
@@ -362,4 +362,36 @@ p {
 
 .about-us-page{
     width: 90%;
+}
+
+/* footer */
+
+footer{
+    background-color: #1D2257;
+    color: #fff !important;
+}
+
+.footer-div{
+    width: 95%;
+}
+footer img{
+    color: #fff !important;
+}
+
+.footer-list li{
+    list-style: none;
+}
+
+footer .footer-list a{
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+footer .form-control{
+    width: 50%;
+}
+
+.footer-email,
+.footer-social{
+    margin-top: 7rem !important;
 }
