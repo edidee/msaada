@@ -54,8 +54,9 @@ p {
 .carousel-item{
     position: relative;
     background-size: cover;
-    height: 400px;
+    height: 500px;
 }
+
 .carousel-item:before {
     content: "";
     position: absolute;
